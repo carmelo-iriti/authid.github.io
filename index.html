@@ -49,8 +49,10 @@
             setTimeout(function removeHighlight () {
               var consentUUIDEl = document.querySelector("#consentUUID")
               var euconsentEl = document.querySelector("#euconsent")
+              var authIdEl = document.querySelector("#authId")
               consentUUIDEl.classList.remove('highlighted')
               euconsentEl.classList.remove('highlighted')
+              authIdEl.classList.remove('highlighted')
             }, 600);
           },
           onPMCancel: function () {
