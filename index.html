@@ -43,7 +43,7 @@
             var authIdEl = document.querySelector("#authId")
             consentUUIDEl.innerHTML = consentUUID
             euconsentEl.innerHTML = euconsent
-            authIdEl.innerHTML = window.getCookie('authId') || ""
+            authIdEl.innerHTML = window.getCookie('authId') || "no_auth_id"
             consentUUIDEl.classList.add('highlighted')
             euconsentEl.classList.add('highlighted')
             authIdEl.classList.add('highlighted')
@@ -105,7 +105,7 @@
     <p>
       AuthId:
       <br>
-      <small><span id="authId">no_auth_id</span></small>
+      <small><span id="authId"></span></small>
     </p>
   </div>
 </body>
